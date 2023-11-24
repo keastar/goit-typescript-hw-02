@@ -8,18 +8,13 @@ type Pages = {
   likes: number;
   accounts: Array<string>;
   status: statuses;
-}
-
-type DetailsIs = {
-   details: {
+  details?: {
     createAt: Date;
     updateAt: Date;
   }
 }
 
-type PagesAll = Pages & DetailsIs;
-
-const page1: PagesAll = {
+const page1: Pages = {
   title: 'The awesome page',
   likes: 100,
   accounts: ['Max', 'Anton', 'Nikita'],

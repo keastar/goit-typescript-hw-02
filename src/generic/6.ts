@@ -18,10 +18,10 @@ function createOrUpdateUser(initialValues: Partial<User>): User {
   // Оновлення користувача
   //Значення деякі за замовченням:
   const defaultUser: User = {
-    name: '***',
-    surname: '*******',
-    email: '',
-    password: '',
+    name: '***', // Мається на увазі, що данні записані)
+    surname: '*******', // Поля запоінені строчними даними
+    email: '**********', // Поля запоінені строчними даними
+    password: '**********', // Поля запоінені строчними даними
   };
   // З'єднуємо дані користувача та значення за замовченням:
   return {...defaultUser, ...initialValues}
